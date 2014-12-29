@@ -43,8 +43,8 @@ hr.star-primary:after {
     content: "\f005";
     font-family: FontAwesome;
     display: inline-block;
-    position: relative; 
-    top: -0.8em;  
+    position: relative;
+    top: -0.8em;
     font-size: 2em;
     padding: 0 0.25em;
 }
@@ -54,7 +54,7 @@ hr.star-light {
 }
 
 hr.star-light:after {
-    background-color: @brand-success;
+    background-color: #094475;
     color: white;
 }
 
@@ -126,13 +126,13 @@ header {
 	        -webkit-transition: all 0.3s;
 	        -moz-transition: all 0.3s;
 	        transition: all 0.3s;
-	    }        
+	    }
     }
     .navbar-fixed-top.navbar-shrink {
         padding: 10px 0;
 		.navbar-brand {
 	        font-size: 1.5em;
-	    }    
+	    }
 	}
 }
 
@@ -190,7 +190,7 @@ section.success {
             max-width: 400px;
             margin: 0 auto;
             .caption {
-                background: fade(@brand-success, 90%);
+                background: fade(#094475, 90%);
                 position: absolute;
                 width: 100%;
                 height: 100%;
@@ -202,13 +202,22 @@ section.success {
                     opacity: 1;
                 }
                 .caption-content {
+					.caption-text{
+						h2{
+							font-size: 20px;
+							padding-bottom: 20px;
+						}
+
+						padding: 10px;
+					}
+					.caption-icons{
+						font-size: 50px;
+						text-align: right;
+						top: 83%;
+						height: 56px;
+					}
                     position: absolute;
                     width: 100%;
-                    height: 20px;
-                    font-size: 20px;
-                    text-align: center;
-                    top: 50%;
-                    margin-top: -12px;
                     color: white;
                     i {
                         margin-top: -12px;
@@ -217,8 +226,8 @@ section.success {
                     h4 {
                         margin: 0;
                     }
-                }                
-            }            
+                }
+            }
         }
     }
     * {
@@ -415,8 +424,8 @@ footer {
                 -webkit-transform: rotate(90deg);
                 /* Safari and Chrome */
                 z-index:1052;
-            }            
-        }        
+            }
+        }
     }
     .modal-backdrop {
     	opacity: 0;

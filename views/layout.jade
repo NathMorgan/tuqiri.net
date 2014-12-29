@@ -6,16 +6,86 @@ html(lang="en")
     meta(name="viewport", content="width=device-width, initial-scale=1")
     meta(name="description", content="")
     meta(name="author", content="")
-    
     title= title
     
     link(rel='stylesheet', href='/stylesheets/bootstrap/bootstrap.css')
     link(rel='stylesheet', href='/stylesheets/font-awesome/font-awesome.css')
+    link(rel='stylesheet', href='/stylesheets/devicons/devicons.css')
     link(rel='stylesheet', href='/stylesheets/freelancer.css')
     link(rel="stylesheet", href="http://fonts.googleapis.com/css?family=Montserrat:400,700")
     link(rel="stylesheet", href="http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic")
-  body
-    block content
+  body(id="page-top", class="index")
+    nav(class="navbar navbar-default navbar-fixed-top")
+      .container
+          .navbar-header.page-scroll
+              button(type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1")
+                  span(class="sr-only")
+                    |Toggle navigation
+                  span(class="icon-bar")
+                  span(class="icon-bar")
+                  span(class="icon-bar")
+              a(class="navbar-brand" href="#page-top")
+                |Tuqiri.net
+          .collapse.navbar-collapse#bs-example-navbar-collapse-1
+              ul(class="nav navbar-nav navbar-right")
+                  li(class="hidden")
+                    a(href="#page-top")
+                  li(class="page-scroll")
+                    a(href="#portfolio")
+                        |Portfolio
+                  li(class="page-scroll")
+                    a(href="#about")
+                        |About
+                  li(class="page-scroll")
+                    a(href="#contact")
+                        |Contact
+    //block content
+    header(style="background-color: #094475;")
+        .container
+            .row
+                .col-lg-12
+                    img(class="img-responsive" src="/images/logo.png" alt="Site Logo")
+                    span(class="name")
+                        |Nathan Morgan
+                    hr(class="star-light")
+                    span(class="skills")
+                        |Web Developer - Database Designer - Programmer
+    section(id="portfolio")
+        .container
+            .row
+                .col-lg-12.text-center
+                    h2
+                        |Portfolio
+                    hr(class="star-primary")
+            .row
+                .col-sm-4.portfolio-item
+                    a(href="https://github.com/Tuqiri/tuqiri.net" class="portfolio-link" data-toggle="modal")
+                        .caption
+                            .caption-content
+                                .caption-text
+                                    h2
+                                        |Tuqiri.net
+                                    |Equestria Galleries is an enterprise-sized database project that uses Microsoft SQL server to provide a fast database to allow users to upload content. The website also uses C# ASP.NET framework with MVC to extract the data from the database and display it when needed for example a list of "New Submissions" on the homepage.
+                                .caption-icons
+                                    i(class="devicons devicons-database" title="Microsoft SQL Database")
+                                    i(class="devicons devicons-html5" title="HTML 5")
+                                    i(class="devicons devicons-netmagazine" title="C# .NET")
+                        img(src="/images/portfolio/tuqiri.net.png" class="img-responsive" alt="")
+                        
+                .col-sm-4.portfolio-item
+                    a(href="https://github.com/Tuqiri/Equestria-Galleries" class="portfolio-link" data-toggle="modal")
+                        .caption
+                            .caption-content
+                                .caption-text
+                                    h2
+                                        |Equestria Galleries
+                                    |Equestria Galleries is an enterprise-sized database project that uses Microsoft SQL server to provide a fast database to allow users to upload content. The website also uses C# ASP.NET framework with MVC to extract the data from the database and display it when needed for example a list of "New Submissions" on the homepage.
+                                .caption-icons
+                                    i(class="devicons devicons-database" title="Microsoft SQL Database")
+                                    i(class="devicons devicons-html5" title="HTML 5")
+                                    i(class="devicons devicons-netmagazine" title="C# .NET")
+                        img(src="/images/portfolio/eg.png" class="img-responsive" alt="")
+                                
     script(src='//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js')
     
     script(src='javascripts/bootstrap.min.js')

@@ -6,6 +6,7 @@
 
 // jQuery for page scrolling feature - requires jQuery Easing plugin
 $(function() {
+    $( document ).tooltip();
     $('.page-scroll a').bind('click', function(event) {
         var $anchor = $(this);
         $('html, body').stop().animate({
