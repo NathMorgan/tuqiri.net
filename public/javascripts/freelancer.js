@@ -4,9 +4,17 @@
  * For details, see http://www.apache.org/licenses/LICENSE-2.0.
  */
 
+// Ajax requests to allow for the pages to be seperated into different templates (MVC format)
+$(function() {
+    $.when($.get('/about'), $.get('/portfolio'), $.get('/contact')).done(function(about, portfolio, contact) {
+        $('footer').before($(portfolio)[0]);
+        $('footer').before($(about)[0]);
+        $('footer').before($(contact)[0]);
+    });
+})
+
 // jQuery for page scrolling feature - requires jQuery Easing plugin
 $(function() {
-    $( document ).tooltip();
     $('.page-scroll a').bind('click', function(event) {
         var $anchor = $(this);
         $('html, body').stop().animate({
