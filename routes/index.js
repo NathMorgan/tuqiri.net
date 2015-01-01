@@ -18,4 +18,8 @@ router.get('/portfolio', function(req, res) {
     res.render('portfolio', { title: 'Nathan Morgan - Web Developer' });
 });
 
+router.get('/skills', function(req, res) {
+    res.render('skills', { title: 'Nathan Morgan - Web Developer' });
+});
+
 module.exports = router;
