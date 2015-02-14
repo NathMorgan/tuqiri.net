@@ -1,0 +1,46 @@
+doctype html
+html
+    head
+        title= title
+        meta(name='description', content='This is a portfolio website for myself Nathan Morgan a website developer. I work with node.js and other website developing languages')
+        meta(http-equiv='X-UA-Compatible', content='IE=edge')
+        meta(name='viewport', content='width=device-width, initial-scale=1')
+        link(rel='stylesheet', href='/stylesheets/style.css')
+        link(rel='stylesheet', href='//ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/themes/smoothness/jquery-ui.css')
+    body
+            header
+                a#logo(href='#home')
+                    img(src='images/global/tuqiri_logo.png')
+                nav
+                    ul
+                        li
+                            a(class="nav-link" id="home" href="/"):| HOME
+                        li
+                            a(class="nav-link" id="about" href="/about"):| ABOUT
+                        li
+                            a(class="nav-link" id="portfolio" href="/portfolio"):| PORTFOLIO
+                        li
+                            a(class="nav-link" id="contact" href="/contact"):| CONTACT
+            #content-wrapper
+                block content
+
+
+        p#dontshow   OH GOD TURN IT BACK TURN IT BACK
+
+            footer
+                p   ©
+                    a(href="http://dragoshi.co.uk/") DragoNet Design
+                    |  2014 - Site created in express.js using node.js server
+                    ul#links
+                        li
+                            a(href='http://blog.tuqiri.net') Blog
+                        li
+                            a(href='https://github.com/tuqiri/tuqiri.net') Github
+                        li
+                            a(href='/bug/') Bug?
+
+
+        script(src='//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js')
+        script(src='//ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js')
+        script(src='/javascripts/history.js')
+        script(src='/javascripts/main.js')

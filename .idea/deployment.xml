@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="PublishConfigData" autoUpload="Always" serverName="ftp.tuqiri.net" uploadOnCheckin="1276d1bd-aeff-4aa4-93cf-8187d38cb3cd">
+    <serverData>
+      <paths name="ftp.tuqiri.net">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/node/server/tuqiri.net" local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+    </serverData>
+    <option name="myUploadOnCheckinName" value="TookieServer" />
+    <option name="myAutoUpload" value="ALWAYS" />
+  </component>
+</project>
+

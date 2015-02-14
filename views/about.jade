@@ -1,0 +1,58 @@
+extends layout
+
+block content
+    #aboutWrapper.navChange
+        h1 About
+        #bioWrapper
+            #bio
+                h2 Who am I?
+                | My name is Nathan Morgan. I have been intrested in web development for some time now it all started back at
+                | school learning about HTML. The first website I ever created was just a test.html file with a body containing
+                | the words "TEST". Since then I have been extreamly intrested in learing much more about web development
+                | and has drove me to the place I am today.
+
+
+            #langWrapper.skillWrappers
+                h2 Language Experience
+                ul
+                    li
+                        a(href="http://www.w3.org/html/wg/drafts/html/master/") HTML 5
+                    li
+                        a(href="http://www.w3.org/Style/CSS/Overview.en.html") CSS
+                    li
+                        a(href="https://developer.mozilla.org/en/docs/Web/JavaScript") JavaScript
+                    li
+                        a(href="http://www.php.net/") PHP
+                    li
+                        a(href="http://lesscss.org/") Less
+                    li
+                        a(href="http://jade-lang.com/") Jade
+                    li
+                        a(href="http://www.java.com/en/") Java
+                    li
+                        a(href="http://en.wikipedia.org/wiki/C_Sharp_(programming_language)") C#
+            #frameworkWrapper.skillWrappers
+                h2 Framework Experience
+                ul
+                    li
+                        a(href="http://www.asp.net/") ASP.net
+                    li
+                        a(href="http://phalconphp.com/") Phalcon
+                    li
+                        a(href="http://expressjs.com/") express.js
+                    li
+                        a(href="http://www.spitfirephp.com/") Spitfire
+            #webserverWrapper.skillWrappers
+                h2 Webserver Experience
+                ul
+                    li
+                        a(href="http://nodejs.org/") Node.js
+                    li
+                        a(href="http://www.apache.org/") Apache
+                    li
+                        a(href="http://socket.io/") Socket.io
+                    li
+                        a(href="http://www.iis.net/") IIS
+        #bioCertWrapper
+            img#bio-img(src='images/about/nathanmorgan.png')
+            img#cert-img(src='images/about/mcts.png')

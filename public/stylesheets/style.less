@@ -1,0 +1,405 @@
+@header-height: 255px;
+@footer-height: 5%;
+
+@header-height-tablet: 0px;
+@footer-height-tablet: 0px;
+
+@header-height-phone: 0px;
+@footer-height-phone: 0px;
+
+
+@font-face {
+  font-family: HighTower;
+  src: url('../../fonts/HTOWERT.TTF');
+}
+
+@font-face {
+  font-family: SourceSansPro;
+  src: url('../../fonts/source-sans-pro/sourcesanspro.ttf');
+}
+
+*{
+  z-index: 0;
+}
+
+html, body {
+  font: 16px "Lucida Grande", Helvetica, Arial, sans-serif;
+  width: 100%;
+  height: 100%;
+  padding: 0px;
+  margin: 0px;
+}
+
+img{
+  border: none;
+}
+
+
+#content-wrapper{
+  width: 85%;
+  height: 60%;
+  margin: auto;
+}
+
+
+/* <--HEADER--> */
+
+header{
+  width: 100%;
+  height: @header-height;
+  background-color: white;
+}
+
+#logo{
+  width: 270px;
+  float: left;
+}
+
+#logo img{
+  width: inherit;
+  padding: 15px;
+}
+
+nav{
+  font-family: SourceSansPro;
+  font-size: 40px;
+  width: 100%;
+  border-bottom: 5px solid #4d4d4d;
+  display: inline-block;
+}
+
+nav ul{
+  text-align: right;
+  list-style: none;
+  margin: 0;
+}
+
+nav ul li{
+  display: inline;
+}
+
+nav ul li a{
+  margin-right: 30px;
+  color: #4d4d4d;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: darkblue;
+  cursor: pointer;
+}
+
+
+/* <--HOME--> */
+
+
+/* <--ABOUT --> */
+
+#aboutWrapper{
+
+}
+
+#bioWrapper{
+  max-height: 500px;
+  width: 100%;
+  display: inline-flex;
+  flex-direction: row;
+}
+
+#bio{
+  width: 500px;
+  min-width: 310px;
+  float: left;
+}
+
+#bio-img{
+  margin-right: 100px;
+}
+
+#personal-picture{
+  width: 160px;
+  margin-left: 50px;
+  border: 2px solid #4d4d4d;
+}
+
+#bioCertWrapper{
+  display: inline-block;
+}
+
+#bioCertWrapper img{
+  width: 9.5vw;
+  min-width: 150px;
+  max-width: 190px;
+}
+
+#experienceWrapper{
+
+}
+
+#langWrapper{
+  margin-left: 100px;
+}
+
+.skillWrappers{
+  max-width: 350px;
+  margin-right: 5%;
+}
+
+.skillWrappers a{
+  text-decoration: none;
+  color: #4d4d4d;
+}
+
+.skillWrappers a:hover{
+  color: #878787;
+}
+
+.skillWrappers h2{
+  height: 50px;
+}
+
+.skillWrappers ul{
+  list-style: none;
+  padding: 0;
+}
+
+.skillWrappers ul li{
+  font-size: 20px;
+  text-align: left;
+}
+
+/* PROJECTS */
+
+#portfolioBox{
+  margin-top: 25px;
+}
+
+.projects{
+  width: 200px;
+  height: 200px;
+  float: left;
+  border: 2px solid #4d4d4d;
+  margin-right: 5px;
+  margin-left: 5px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.projects:hover{
+  background-color: rgba(50, 50, 50, 0.75);
+  border-color: black;
+}
+
+.projectsTitle{
+  font-size: 20px;
+}
+
+.projectIcon{
+  height: 155px;
+}
+
+.projectIcon img{
+  max-height: 150px;
+}
+
+.projectIdent{
+  text-align: right;
+  font-size: 15px;
+  padding-right: 10px;
+}
+/* <--FOOTER--> */
+
+
+footer{
+  text-align: center;
+  text-decoration: none;
+  font-family: SourceSansPro;
+  font-size: 16px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  margin: 0 auto;
+}
+
+footer p{
+  margin: 0;
+}
+
+footer a{
+  text-decoration: none;
+  color: #4d4d4d;
+}
+
+footer a:hover{
+  color: #878787;
+}
+
+#links{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+#links li{
+  display: inline;
+}
+
+#links a{
+  margin: 0 15px;
+}
+
+#dontshow{
+  display: none;
+}
+
+@media all and (max-device-width: 1000px) and (orientation: portrait){
+  body{
+    background-color: #ffffff;
+    height: 100%;
+  }
+
+  *{
+    font-size: 30px;
+  }
+
+  header{
+    width: 100%;
+  }
+
+  nav{
+    font-size: 4.5vw;
+  }
+
+  #bio{
+    width: 500px;
+    float: left;
+    margin-bottom: 100px;
+  }
+
+  #bioWrapper{
+    display: block;
+    max-height: default;
+
+  }
+
+  #bioCertWrapper{
+    position: absolute;
+    top: 500px;
+    right: 100px;
+    height: 600px;
+  }
+
+  #bio-img{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+  }
+
+  #cert-img{
+    position: absolute;
+    top: 250px;
+    right: 100px;
+  }
+  #bioCertWrapper img{
+    width: 200px;
+  }
+
+  .skillWrappers{
+    font-size: 30px;
+    width: 100%;
+    margin: 0;
+  }
+
+  .skillWrappers h2{
+    height: 15px;
+  }
+
+  #langWrapper{
+    margin: 0;
+  }
+
+  #webserverWrapper{
+    margin-bottom: 100px;
+  }
+
+  footer{
+    position: initial;
+    height: 20px;
+    margin-top: 20px;
+    font-size: 12px !important;
+  }
+}
+
+@media all and (max-device-width: 1000px) and (orientation: landscape) {
+  *{
+    display: none;
+  }
+
+  html{
+    display: block;
+  }
+
+  body{
+    display: block;
+    height: 100%;
+    width: 100%;
+    background: black;
+    animation: colourchange 1s linear 2s infinite alternate;
+    -webkit-animation: colourchange 1s linear 2s infinite alternate;
+
+  }
+
+  @keyframes colourchange{
+    0%{
+      background: black;
+    }
+
+    25%{
+      background: url('../../images/about/nathanmorgan.png');
+    }
+
+    50%{
+      background: black;
+    }
+
+    75%{
+      background: url('../../images/about/nathanmorgan.png');
+    }
+
+    100%{
+      background: black;
+    }
+  }
+
+  @-webkit-keyframes colourchange{
+    0%{
+      background: black;
+    }
+
+    25%{
+      background: url('../../images/about/nathanmorgan.png');
+    }
+
+    50%{
+      background: black;
+    }
+
+    75%{
+      background: url('../../images/about/nathanmorgan.png');
+    }
+
+    100%{
+      background: black;
+    }
+  }
+
+  #dontshow {
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    line-height: 100px;
+    color: #ffffff;
+    background: black;
+
+  }
+}
